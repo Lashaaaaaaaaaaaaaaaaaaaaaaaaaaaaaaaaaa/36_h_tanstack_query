@@ -1,4 +1,4 @@
-import $api from "../http";
+import $api from "../../http";
 
 export default async function fetchTodos() {
   const res = await $api.get("/todos");

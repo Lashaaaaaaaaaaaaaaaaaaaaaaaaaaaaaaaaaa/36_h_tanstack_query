@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import fetchTodo from "../../api/fetchTodo";
-import { ITodo } from "../../interfaces/todo.interface";
+import { ITodo } from "../../../interfaces/todo.interface";
+import fetchTodo from "../../../api/todo/fetchTodo";
 
 const useFetchTodo = (id: any) => {
   const result = useQuery<ITodo>({
